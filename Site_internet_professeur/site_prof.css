@@ -1,0 +1,152 @@
+
+body {
+    color:black;
+    background-color:whitesmoke;
+    background-image:url("https://upload.wikimedia.org/wikipedia/en/c/cd/March_for_Science.png");
+    background-repeat :no-repeat;
+    min-height : 100vh;  /*Pour prendre toute la page sur n'importe quel viewer*/
+    padding : 0px;
+    background-position-x:80px, 500px;
+    background-size: 160px ;
+
+    display : grid;
+    grid-template-areas: 
+      "header header header"
+      "header1 header1 header1"
+      "left middle right"
+      "left middle right"
+      "footer footer footer";
+      grid-template-columns: 
+      0.75fr 1fr 1fr ;
+      grid-template-rows: 0.5fr 0.3fr 1fr 1fr 0.5fr ; 
+    }
+
+
+h1#titre {
+    color : rgb(18, 78, 97);
+    font-style: italic;
+    font-size: 4em;
+    font-family: calibri;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+    text-align: center ; 
+    background-image: url("C:/Users/Maelle/Documents/Projets/Site internet/images/atome.png");
+    grid-area: header;
+
+}
+
+div#categories {
+    
+    color : rgb(18, 78, 97);
+    font-family: calibri;
+    font-size: 2em;
+    padding: 1px;
+    border: 3px solid  rgb(18, 78, 97);
+    border-radius: 10px;
+    text-decoration: none;
+    grid-area: left;
+    background-color: white;
+}
+
+div#categories {
+    
+    color : rgb(18, 78, 97);
+    font-family: calibri;
+    font-size: 2em;
+    padding: 1px;
+    border: 3px solid  rgb(18, 78, 97);
+    border-radius: 10px;
+    text-decoration: none;
+    grid-area: left;
+    background-color: white;
+    
+}
+
+div#tete {
+    
+    color : rgb(18, 78, 97);
+    font-family: calibri;
+    font-size: 2em;
+    padding: 1px;
+    border: 3px solid  rgb(18, 78, 97);
+    border-radius: 10px;
+    text-decoration: none;
+    grid-area: header1;
+    background-color: white;
+}
+
+a.classes {
+
+    color : rgb(18, 78, 97);
+    font-family: calibri;
+    font-size: 0.8em;
+    line-height: 50px ;
+    transition: all 0.4s ease-in-out;
+    }
+
+a.classes:hover {
+    font-size: 0.9em;
+    letter-spacing: 5px ;
+    font-style: bold ; 
+}
+
+p#recherche {
+    grid-area: 2/3
+
+
+}
+
+div#droit{
+
+    grid-area: middle right ;
+    padding-left: 200px;
+
+}
+
+div#cours {
+
+    color : rgb(18, 78, 97);
+    font-family: calibri;
+    font-size: 2em;
+    padding: 50px;
+    border: 1px solid  rgb(18, 78, 97);
+    border-radius: 10px;
+    text-decoration: none;
+    grid-area: middle;
+    background-color: white;
+    text-align: center;
+
+
+}
+
+div#exercices {
+
+    color : rgb(18, 78, 97);
+    font-family: calibri;
+    font-size: 2em;
+    padding: 50px;
+    border: 1px solid  rgb(18, 78, 97);
+    border-radius: 10px;
+    text-decoration: none;
+    grid-area: right;
+    background-color: white;
+    text-align: center;
+
+
+}
+
+a.liens {
+
+    color : rgb(18, 78, 97);
+    font-family: calibri;
+    font-size: 0.8em;
+    line-height: 50px ;
+    transition: all 0.4s ease-in-out;
+}
+
+a.liens:hover {
+    letter-spacing: 5px ;
+    font-style: bold ; 
+    color : rgb(184, 147, 27) ; 
+}
+
